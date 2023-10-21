@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+$logo-font: "Sen-Bold", Helvetica;
+$para-font: "Poppins";
+$main-color: #c88a40;
+
+// .paper{
+//   position: relative;
+//   z-index: 50;
+// }
+
+// @layer {
+
+//   .center {
+//     @apply flex items-center justify-center
+//   }
+
+//   .text-style {
+//     @apply text-[18px] leading-[20px]
+//   }
+
+//   .table-text {
+//     @apply text-xl leading-[16px] h-[14px] font-normal m-auto
+//   }
+
+//   .table-tr {
+//     @apply flex py-3  border-b-[1px] border-[#CFCFCF]
+//   }
+
+//   .table-td {
+//     @apply h-[30px] w-[150px]
+//   }
+
+//   .val-style{
+//     @apply text-red-600 font-bold  list-disc mr-4
+//   }
+
+// }
+
+body {
+  //   background:  url("/src/assets/landing.png") ;
+  //   background-size: auto;
+  // z-index: 2;
+  overflow-x: hidden;
+}
+
+.logo-text {
+  font-family: $logo-font ;
+}
+
+.main-content {
+  position: relative;
+  z-index: 50;
+}
+
+.main-content p {
+  font-family: $para-font;
+}
+
+.Ellipse {
+  width: 800px;
+  height: 700px;
+  border-radius: 800px;
+  // background: radial-gradient(50% 50% at 50% 50%, rgb(242.25, 167.52, 79.74) 0%, rgba(228.44, 165.78, 92.33, 0) 100%);
+  background: radial-gradient(50% 50% at 50% 50%, rgb(228, 166, 92) 0%, rgba(228, 166, 92, 0) 100%);
+  position: absolute;
+  left: 25%;
+  z-index: 1;
+}
+
+.landing .main-content {
+  height: calc(100vh - 66px);
+}
