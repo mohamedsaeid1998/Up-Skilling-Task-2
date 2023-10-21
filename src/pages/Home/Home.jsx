@@ -32,15 +32,15 @@ const Home = () => {
 
 
 
-        <div className='right-land md:flex flex-col  col-span-4  '>
+        <div className='relative lg:static right-land flex flex-col  col-span-4  '>
 
-          <img src={paper} className='paper opacity-40  md:h-screen ' alt="right-background" />
+<img src={paper} className='paper opacity-40 object-fill  md:h-screen ' alt="right-background" />
+          <img src={TextLorem} className='absolute w-[280px]  top-[110%] left-[25%] hidden  xl:top-[27%]  xl:left-[59%] z-30 ' alt="TextLorem" />
 
-          <img src={TextLorem} className='absolute w-[280px]  top-[110%] left-[25%]   xl:top-[27%]  xl:left-[59%] z-30 ' alt="TextLorem" />
+<img src={mainPic} className='absolute  top-[20%]  xl:w-[666px] xl:h-[413px] xl:top-[34%] xl:left-[40%] z-30' alt="mainPicture" />
 
-          <img src={mainPic} className='absolute  top-[115%]  xl:w-[666px] xl:h-[413px] xl:top-[34%] xl:left-[40%] z-30' alt="mainPicture" />
+<img src={badge} className='absolute w-[100px] top-[55%] left-[38%] sm:w-[160px] sm:top-[150%]  xl:top-[74%] xl:left-[62%] z-40' alt="Quality Badge" />
 
-          <img src={badge} className='absolute w-[100px] top-[135%] left-[38%]  sm:w-[160px] sm:top-[150%]  xl:top-[74%] xl:left-[62%] z-40' alt="Quality Badge" />
 
         </div>
 

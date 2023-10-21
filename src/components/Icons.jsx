@@ -12,7 +12,7 @@ const Icons = () => {
 
   ])
   return <>
-  <ul className='flex absolute text-white bottom-[14%] gap-10 sm:bottom-[20%] sm:gap-16 md:bottom-[5%] md:left-10  md:flex-col md:gap-4 md:text-mainColor z-20'>
+  <ul className='flex absolute text-white bottom-[8%] gap-10 sm:bottom-[20%] sm:gap-16 md:bottom-[5%] md:left-10  md:flex-col md:gap-4 md:text-mainColor z-20'>
 {links.map((link,index) => <li key={index} className=''>
   <a className='text-2xl' href={link.website}>{link.icon}</a>
 </li>
