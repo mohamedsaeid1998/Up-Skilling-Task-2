@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import {FaVk} from 'react-icons/fa'
-import { AiFillFacebook } from "react-icons/Ai";
-import { AiFillInstagram } from "react-icons/Ai";
-import { AiOutlineTwitter } from "react-icons/Ai";
+import { AiFillFacebook } from "react-icons/ai";
+import { AiFillInstagram } from "react-icons/ai";
+import { AiOutlineTwitter } from "react-icons/ai";
 const Icons = () => {
   const [links, setLinks] = useState([
     { icon: <FaVk/>,website:"https://vk.com/"},
