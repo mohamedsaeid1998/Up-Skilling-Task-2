@@ -1,9 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;500;600;700;800&display=swap');
+
 
 $logo-font: "Sen-Bold", Helvetica;
-$para-font: "Poppins";
+$para-font: 'Poppins', sans-serif;
+$header-font: 'Sen', sans-serif;
 $main-color: #c88a40;
 
 // .paper{
@@ -38,13 +42,144 @@ $main-color: #c88a40;
 //   }
 
 // }
-
-body {
-  //   background:  url("/src/assets/landing.png") ;
-  //   background-size: auto;
-  // z-index: 2;
-  overflow-x: hidden;
+h2{
+  font-family:$header-font;
 }
+
+.home {
+  background: linear-gradient(to right, $main-color 72%, transparent 72%), url('./assets/landing.png');
+  background-position: right;
+  overflow-x: hidden;
+
+  .opacity {
+    position: absolute;
+    right: 0;
+    width: 28%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+
+  .main-content {
+    height: calc(100vh - 66px);
+  }
+}
+
+.How-We-Work {
+  height: 100vh;
+  background: linear-gradient(to left, $main-color 72%, transparent 72%), url('./assets/landing.png');
+  background-position: left;
+  overflow-x: hidden;
+
+  .opacity2 {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    width: 28%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+
+
+  p {
+    font-family: $para-font ;
+  }
+
+}
+
+.about{
+  height: 100vh;
+  background: linear-gradient(to right, $main-color 72%, transparent 72%);
+  overflow: hidden;
+
+  p{
+    font-family: $para-font ;
+  }
+}
+
+.recipes{
+  height: 100vh;
+  overflow: hidden;
+  p,h3{
+    font-family: $para-font ;
+  }
+}
+
+.Testymonials{
+  height: 100vh;
+  background: $main-color;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+
+  .cover{
+    width: 100%;
+    height: 100%;
+    background: url('./assets/Group.png');
+    opacity: 0.4;
+    position: absolute;
+    z-index: 2;
+  }
+
+p,h3{
+  font-family: $para-font ;
+}
+}
+
+
+
+@media (max-width: 768px) {
+  .home {
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(to bottom, $main-color 50%, transparent 50%), url('./assets/landing.png');
+    background-position: bottom;
+    height: 200vh;
+
+    .opacity {
+      position: absolute;
+      top: 100%;
+      height: 100vh;
+      width: 100vh !important;
+      background-color: rgba(255, 255, 255, 0.4);
+    }
+  }
+
+
+  .How-We-Work {
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(to bottom, $main-color 50%, transparent 50%), url('./assets/landing.png');
+    background-position: bottom;
+    height: 200vh;
+
+    .opacity2 {
+      position: absolute;
+      top: 300%;
+      height: 100vh;
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.4);
+    }
+
+    //     .How-We-Work h2 {
+    //   font-size: calc(40px + 5vw);
+    // }
+
+
+
+  }
+
+
+}
+
+input::-webkit-input-placeholder{
+  color: #584125 !important;
+  font-weight:800;
+  font-family: $header-font;
+}
+
+// <div className='opacity h-screen ml-auto w-[28%]'></div>
+
+
 
 .logo-text {
   font-family: $logo-font ;
@@ -70,12 +205,23 @@ body {
   z-index: 1;
 }
 
-.landing .main-content {
-  height: calc(100vh - 66px);
-}
+
+
+// .How-We-Work h2 {
+//   font-family: $logo-font ;
+// }
+
 
 // .right-land{
 //   background: url('./assets/landing.png');
 
 // }
 
+
+// .How-We-Work .picture {
+//   left: calc(20px + 28vw);
+// }
+
+// .How-We-Work .img {
+//   width: calc(50px + 25vw);
+// }
