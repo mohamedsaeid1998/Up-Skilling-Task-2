@@ -16,7 +16,7 @@ const Testymonials = () => {
 <TestCard/>
 <TestCard/>
   </div>
-  <Button text={'contact us'} className={` block m-auto mt-6 xl:mb-0 relative z-40`} />
+  <Button type={'button'} text={'contact us'} className={` block m-auto mt-6 xl:mb-0 relative z-40`} />
 </main>
 </section>
     </>

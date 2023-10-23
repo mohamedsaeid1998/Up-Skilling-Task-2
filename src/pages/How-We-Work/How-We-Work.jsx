@@ -23,7 +23,7 @@ const HowWeWork = () => {
 
         <Pictures />
 
-        <Button text={'contact us'} className={` block m-auto mt-3 text-center xl:mb-0 relative z-30`} />
+        <Button type={'button'} text={'contact us'} className={` block m-auto mt-3 text-center xl:mb-0 relative z-30`} />
 
 
       </main>

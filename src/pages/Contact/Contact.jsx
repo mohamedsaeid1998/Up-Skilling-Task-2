@@ -17,7 +17,7 @@ const Contact = () => {
     let { name, email, phone } = data
     // @ts-ignore
     const res = await dispatch(ContactSendData({ name, email, phone }))
-    window.alert(res.payload.data.message)
+    window.alert(res?.payload?.data?.message)
   }
 
 
@@ -34,7 +34,7 @@ const Contact = () => {
   // }
 
 
-  
+
   return <>
     <section>
       <main className='mt-3 mb-6'>

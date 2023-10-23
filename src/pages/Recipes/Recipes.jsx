@@ -47,7 +47,7 @@ const Recipes = () => {
 
         </div>
 
-        <Button text={'contact us'} className={`  m-auto mt-3 xl:mb-0`} />
+        <Button type={'button'} text={'contact us'} className={`  m-auto mt-3 xl:mb-0`} />
 
       </main>
     </section>
