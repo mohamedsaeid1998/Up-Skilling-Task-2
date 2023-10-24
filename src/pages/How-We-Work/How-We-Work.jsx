@@ -16,7 +16,7 @@ const HowWeWork = () => {
 
         <Pictures />
 
-        <Button type={'button'} text={'contact us'} className={` block m-auto mt-3 mb-2 text-center lg:mb-5 xl:mb-6 xl:mt-5 relative z-30`} />
+        <Button linkstyle={''} type={'button'} text={'contact us'} className={` block m-auto mt-3 mb-2 text-center lg:mb-5 xl:mb-6 xl:mt-5 relative z-30`} />
 
       </main>
 

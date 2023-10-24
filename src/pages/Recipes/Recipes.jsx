@@ -12,7 +12,7 @@ const Recipes = () => {
           <RecCard />
         </div>
 
-        <Button type={'button'} text={'contact us'} className={`  m-auto mt-3 xl:mb-0`} />
+        <Button linkstyle={'m-auto'} type={'button'} text={'contact us'} className={`  m-auto mt-3 xl:mb-0`} />
 
       </main>
     </section>

@@ -25,11 +25,11 @@ const Home = () => {
 
       <Header />
       <main className='main-content  flex flex-col lg:flex-row justify-center lg:items-center 2xl:justify-between'>
-        <div className='left flex flex-col items-center 2xl:items-start  '>
+        <div className='left flex flex-col items-center lg:items-start  '>
           <h1 className=' text-center mt-16 lg:mt-0  text-5xl sm:text-6xl lg:text-start font-extrabold xl:text-[58px] xl:w-[549px] 2xl:text-[70px] 2xl:w-[700px]  '>TASTY PASTRIES</h1>
           <p className=' text-center  sm:text-lg lg:text-start mt-3  md:w-[400px] lg:w-[552px] lg:text-lg mb-9 font-semibold  leading-relaxed 2xl:text-[22px] ' >Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's Standard Dummy Text Ever Since The</p>
 
-          <Button text={'see more'} type={"button"} className={"m-auto lg:ms-0 "} />
+          <Button linkstyle={'m-st'} text={'see more'} type={"button"} className={"m-auto lg:ms-0 "} />
 
           <div className='hidden lg:block absolute bottom-0 md:w-[75px] md:h-[160px] md:left-[-16px] lg:w-[100px] lg:h-[155px] lg:left-[-16px]  xl:w-[81px] xl:h-[180px] xl:left-[-16px] 2xl:h-[145px] bg-white overflow-hidden'>
             <img src={slice2} className='  opacity-40 z-10 h-full object-center' alt=" slice2" />
