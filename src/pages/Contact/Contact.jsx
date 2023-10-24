@@ -12,27 +12,27 @@ const Contact = () => {
 
   const { register, handleSubmit, reset } = useForm()
 
-  let dispatch = useDispatch()
-
-  const sendData = async (data) => {
-    let { name, email, phone } = data
-    // @ts-ignore
-    const res = await dispatch(ContactSendData({ name, email, phone }))
-    window.alert(res?.payload?.data?.message)
-  }
-
+  // let dispatch = useDispatch()
 
   // const sendData = async (data) => {
-  //   const { name, email, phone } = data
-  //   let res = await axios.post('http://upskilling-egypt.com:3000/contact', {
-  //     name,
-  //     email,
-  //     phone
-  //   })
-
-  //     window.alert(res?.data?.message)
-  //     reset()
+  //   let { name, email, phone } = data
+  //   // @ts-ignore
+  //   const res = await dispatch(ContactSendData({ name, email, phone }))
+  //   window.alert(res?.payload?.data?.message)
   // }
+
+
+  const sendData = async (data) => {
+    const { name, email, phone } = data
+    let res = await axios.post('http://upskilling-egypt.com:3000/contact', {
+      name,
+      email,
+      phone
+    })
+
+      window.alert(res?.data?.message)
+      reset()
+  }
 
 
 
