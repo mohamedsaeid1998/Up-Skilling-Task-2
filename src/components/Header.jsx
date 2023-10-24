@@ -4,9 +4,9 @@ const Header = () => {
 
 
   return <>
-    <header className='flex '>
+    <header className='flex justify-start items-start  '>
       <img src={logo} className='w-12 h-12 object-contain' alt="logo" />
-      <span className='logo-text inline-block ml-3 font-bold  '>PEACHY PUP
+      <span className='logo-text inline-block ml-3 font-bold '>PEACHY PUP
         <br />
         Bakery
       </span>

@@ -16,8 +16,8 @@ const Pictures = () => {
     { photo: img1 },
   ])
   return <>
-    <div className=' flex flex-col lg:flex-row justify-between gap-3 z-30 relative px-9 pt-6   '>
-      {pictures.map((ele,index) =><img key={index} src={ele.photo} className='img  xl:w-auto xl:h-auto rounded-[10px]' alt="img" />)}
+    <div className=' flex flex-col items-center md:grid grid-cols-2 lg:flex lg:w-full lg:flex-row justify-between gap-3 sm:gap-5 z-30 relative px-9 pt-6   '>
+      {pictures.map((ele,index) =><img key={index} src={ele.photo} className='w-[250px] h-[228px] sm:h-[245px]  sm:w-[300px] xl:w-full xl:h-full object-cover rounded-[10px]' alt="img" />)}
     </div>
   </>
 }

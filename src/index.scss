@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;500;600;700;800&display=swap');
 
@@ -10,40 +11,21 @@ $para-font: 'Poppins', sans-serif;
 $header-font: 'Sen', sans-serif;
 $main-color: #c88a40;
 
-// .paper{
-//   position: relative;
-//   z-index: 50;
-// }
 
-// @layer {
+@layer {
 
-//   .center {
-//     @apply flex items-center justify-center
-//   }
+  .input-style {
+    @apply w-[374px] bg-orange-200 rounded-[61px]
+  }
 
-//   .text-style {
-//     @apply text-[18px] leading-[20px]
-//   }
+}
 
-//   .table-text {
-//     @apply text-xl leading-[16px] h-[14px] font-normal m-auto
-//   }
+h1 {
+  font-family: $logo-font;
+}
 
-//   .table-tr {
-//     @apply flex py-3  border-b-[1px] border-[#CFCFCF]
-//   }
-
-//   .table-td {
-//     @apply h-[30px] w-[150px]
-//   }
-
-//   .val-style{
-//     @apply text-red-600 font-bold  list-disc mr-4
-//   }
-
-// }
-h2{
-  font-family:$header-font;
+h2 {
+  font-family: $header-font;
 }
 
 .home {
@@ -55,17 +37,20 @@ h2{
     position: absolute;
     right: 0;
     width: 28%;
-    height: 100vh;
     background-color: rgba(255, 255, 255, 0.4);
   }
 
   .main-content {
-    height: calc(100vh - 66px);
+    min-height: calc(100vh - 64px);
+  }
+
+  p {
+    font-family: $para-font;
   }
 }
 
 .How-We-Work {
-  height: 100vh;
+
   background: linear-gradient(to left, $main-color 72%, transparent 72%), url('./assets/landing.png');
   background-position: left;
   overflow-x: hidden;
@@ -75,10 +60,9 @@ h2{
     z-index: 1;
     left: 0;
     width: 28%;
-    height: 100vh;
+
     background-color: rgba(255, 255, 255, 0.4);
   }
-
 
   p {
     font-family: $para-font ;
@@ -86,32 +70,31 @@ h2{
 
 }
 
-.about{
-  height: 100vh;
+.about {
   background: linear-gradient(to right, $main-color 72%, transparent 72%);
   overflow: hidden;
 
-  p{
+  p {
     font-family: $para-font ;
   }
 }
 
-.recipes{
-  height: 100vh;
+.recipes {
   overflow: hidden;
-  p,h3{
+
+  p,
+  h3 {
     font-family: $para-font ;
   }
 }
 
-.Testymonials{
-  height: 100vh;
+.Testymonials {
   background: $main-color;
   overflow: hidden;
   position: relative;
   z-index: 1;
 
-  .cover{
+  .cover {
     width: 100%;
     height: 100%;
     background: url('./assets/Group.png');
@@ -120,29 +103,45 @@ h2{
     z-index: 2;
   }
 
-p,h3{
-  font-family: $para-font ;
-}
-}
+  h3 {
+    font-size: 1.1rem;
+    font-family: $para-font ;
+  }
 
-
+  p {
+    font-family: $para-font ;
+  }
+}
 
 @media (max-width: 768px) {
-  .home {
+
+
+  .about {
     display: flex;
     flex-direction: row;
+    background: linear-gradient(to bottom, $main-color 72%, transparent 72%);
+    background-position: bottom;
+  }
+
+}
+
+@media (max-width: 992px) {
+
+  .home {
+    display: flex;
+    flex-direction: column;
     background: linear-gradient(to bottom, $main-color 50%, transparent 50%), url('./assets/landing.png');
     background-position: bottom;
-    height: 200vh;
 
-    .opacity {
-      position: absolute;
-      top: 100%;
-      height: 100vh;
-      width: 100vh !important;
-      background-color: rgba(255, 255, 255, 0.4);
-    }
+    // .opacity {
+    //   position: absolute;
+    //   top: 100%;
+    //   height: 100vh;
+    //   width: 100vh !important;
+    //   background-color: rgba(255, 255, 255, 0.4);
+    // }
   }
+
 
 
   .How-We-Work {
@@ -150,30 +149,50 @@ p,h3{
     flex-direction: row;
     background: linear-gradient(to bottom, $main-color 50%, transparent 50%), url('./assets/landing.png');
     background-position: bottom;
-    height: 200vh;
+
 
     .opacity2 {
-      position: absolute;
-      top: 300%;
-      height: 100vh;
-      width: 100%;
-      background-color: rgba(255, 255, 255, 0.4);
+      display: none;
     }
 
-    //     .How-We-Work h2 {
-    //   font-size: calc(40px + 5vw);
-    // }
-
+    // background: linear-gradient(to right, $main-color 72%, transparent 72%);
 
 
   }
 
 
+  .about {
+    background: linear-gradient(to bottom, $main-color 72%, transparent 72%);
+  }
+
+  // .How-We-Work .opacity2 {
+  //   height: 85vh;
+  // }
+
+
 }
 
-input::-webkit-input-placeholder{
+
+
+// @media (max-width: 1200px) {
+
+//   .How-We-Work .opacity2 {
+//     height: 102vh;
+//   }
+
+// }
+
+// @media (max-width: 1400px) {
+//   .How-We-Work .opacity2 {
+//     height: 91vh;
+//   }
+// }
+
+
+
+input::-webkit-input-placeholder {
   color: #584125 !important;
-  font-weight:800;
+  font-weight: 800;
   font-family: $header-font;
 }
 
@@ -190,21 +209,17 @@ input::-webkit-input-placeholder{
   z-index: 50;
 }
 
-.main-content p {
-  font-family: $para-font;
-}
 
 .Ellipse {
   width: 800px;
   height: 700px;
   border-radius: 800px;
-  // background: radial-gradient(50% 50% at 50% 50%, rgb(242.25, 167.52, 79.74) 0%, rgba(228.44, 165.78, 92.33, 0) 100%);
   background: radial-gradient(50% 50% at 50% 50%, rgb(228, 166, 92) 0%, rgba(228, 166, 92, 0) 100%);
   position: absolute;
-  left: 25%;
   z-index: 1;
 }
 
+  // background: radial-gradient(50% 50% at 50% 50%, rgb(242.25, 167.52, 79.74) 0%, rgba(228.44, 165.78, 92.33, 0) 100%);
 
 
 // .How-We-Work h2 {
