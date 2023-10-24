@@ -20,7 +20,6 @@ const HowWeWork = () => {
 
       </main>
 
-
     </section>
   </>
 }

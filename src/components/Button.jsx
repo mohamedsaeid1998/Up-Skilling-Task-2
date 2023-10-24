@@ -5,7 +5,8 @@ const Button = ({text,className,type}) => {
 
   return <>
 
-    <button type={type} className={tw(`uppercase text-white bg-buttonColor font-black rounded-[30px] w-[250px] h-[60px] lg:w-[194px] xl:mb-20`,className)}>{text}</button>
+<a href="#contact"><button type={type} className={tw(`uppercase text-white bg-buttonColor font-black rounded-[30px] w-[250px] h-[60px] lg:w-[194px] xl:mb-20`,className)}>{text}</button></a>
+    
 
   </>
 }

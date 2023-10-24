@@ -1,10 +1,4 @@
 import './Recipes.module.scss'
-// @ts-ignore
-import img1 from '../../assets/Recipes 1.jpg'
-// @ts-ignore
-import img2 from '../../assets/Recipes 2.jpg'
-// @ts-ignore
-import img3 from '../../assets/Recipes 3.jpg'
 import { Button, RecCard } from '@/components'
 const Recipes = () => {
 
