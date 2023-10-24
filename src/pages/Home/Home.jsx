@@ -35,12 +35,12 @@ const Home = () => {
             <img src={slice2} className='  opacity-40 z-10 h-full object-center' alt=" slice2" />
           </div>
           <Icons />
-          <span className='hidden lg:block absolute md:bottom-3 md:left-[16%]  lg:bottom-2  xl:left-[8%] text-lg font-bold leading-relaxed'>Telephone: <span className='tracking-[8px]'>+7 700 000 00 00</span></span>
+          <span className='hidden lg:block absolute md:bottom-3 md:left-[16%] lg:bottom-2 xl:left-[8%] text-lg font-bold leading-relaxed'>Telephone: <span className='tracking-[8px]'>+7 700 000 00 00</span></span>
         </div>
 
         <div className='right relative m-auto'>
 
-          <img src={TextLorem} className=' hidden xl:block absolute  top-0  right-[-8px] 2xl:right-[15px] z-30  ' alt="TextLorem" />
+          <img src={TextLorem} className=' here hidden xl:block  absolute  top-0  right-[-8px] 2xl:right-[15px] z-30  ' alt="TextLorem" />
           <img src={mainPic} className=' my-16 lg:mt-16 ' alt="mainPicture" />
           <img src={badge} className='absolute top-[60%] right-[30%]  w-[120px] sm:w-[160px] lg:top-[70%] lg:right-[35%] z-40' alt="Quality Badge" />
 

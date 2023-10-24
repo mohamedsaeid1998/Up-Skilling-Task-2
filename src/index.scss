@@ -50,7 +50,6 @@ h2 {
 }
 
 .How-We-Work {
-
   background: linear-gradient(to left, $main-color 72%, transparent 72%), url('./assets/landing.png');
   background-position: left;
   overflow-x: hidden;
@@ -172,8 +171,16 @@ h2 {
 
 }
 
+// .img::before{
+// content: '';
 
+// }
 
+.img{
+  background-color:red;
+  background-clip: text;
+  
+}
 // @media (max-width: 1200px) {
 
 //   .How-We-Work .opacity2 {
