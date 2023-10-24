@@ -20,12 +20,17 @@ $main-color: #c88a40;
 
 }
 
-h1 {
+h1, .logo-text {
   font-family: $logo-font;
 }
 
 h2 {
   font-family: $header-font;
+}
+
+p,
+h3 {
+  font-family: $para-font;
 }
 
 .home {
@@ -44,9 +49,6 @@ h2 {
     min-height: calc(100vh - 64px);
   }
 
-  p {
-    font-family: $para-font;
-  }
 }
 
 .How-We-Work {
@@ -59,12 +61,7 @@ h2 {
     z-index: 1;
     left: 0;
     width: 28%;
-
     background-color: rgba(255, 255, 255, 0.4);
-  }
-
-  p {
-    font-family: $para-font ;
   }
 
 }
@@ -73,18 +70,10 @@ h2 {
   background: linear-gradient(to right, $main-color 72%, transparent 72%);
   overflow: hidden;
 
-  p {
-    font-family: $para-font ;
-  }
 }
 
 .recipes {
   overflow: hidden;
-
-  p,
-  h3 {
-    font-family: $para-font ;
-  }
 }
 
 .Testymonials {
@@ -104,16 +93,11 @@ h2 {
 
   h3 {
     font-size: 1.1rem;
-    font-family: $para-font ;
   }
 
-  p {
-    font-family: $para-font ;
-  }
 }
 
 @media (max-width: 768px) {
-
 
   .about {
     display: flex;
@@ -121,7 +105,6 @@ h2 {
     background: linear-gradient(to bottom, $main-color 72%, transparent 72%);
     background-position: bottom;
   }
-
 }
 
 @media (max-width: 992px) {
@@ -131,17 +114,7 @@ h2 {
     flex-direction: column;
     background: linear-gradient(to bottom, $main-color 50%, transparent 50%), url('./assets/landing.png');
     background-position: bottom;
-
-    // .opacity {
-    //   position: absolute;
-    //   top: 100%;
-    //   height: 100vh;
-    //   width: 100vh !important;
-    //   background-color: rgba(255, 255, 255, 0.4);
-    // }
   }
-
-
 
   .How-We-Work {
     display: flex;
@@ -149,13 +122,9 @@ h2 {
     background: linear-gradient(to bottom, $main-color 50%, transparent 50%), url('./assets/landing.png');
     background-position: bottom;
 
-
     .opacity2 {
       display: none;
     }
-
-    // background: linear-gradient(to right, $main-color 72%, transparent 72%);
-
 
   }
 
@@ -164,38 +133,8 @@ h2 {
     background: linear-gradient(to bottom, $main-color 72%, transparent 72%);
   }
 
-  // .How-We-Work .opacity2 {
-  //   height: 85vh;
-  // }
-
 
 }
-
-// .img::before{
-// content: '';
-
-// }
-
-.img{
-  background-color:red;
-  background-clip: text;
-  
-}
-// @media (max-width: 1200px) {
-
-//   .How-We-Work .opacity2 {
-//     height: 102vh;
-//   }
-
-// }
-
-// @media (max-width: 1400px) {
-//   .How-We-Work .opacity2 {
-//     height: 91vh;
-//   }
-// }
-
-
 
 input::-webkit-input-placeholder {
   color: #584125 !important;
@@ -203,47 +142,16 @@ input::-webkit-input-placeholder {
   font-family: $header-font;
 }
 
-// <div className='opacity h-screen ml-auto w-[28%]'></div>
-
-
-
-.logo-text {
-  font-family: $logo-font ;
-}
-
 .main-content {
   position: relative;
   z-index: 50;
 }
 
-
 .Ellipse {
-  width: 800px;
+  width: 730px;
   height: 700px;
   border-radius: 800px;
   background: radial-gradient(50% 50% at 50% 50%, rgb(228, 166, 92) 0%, rgba(228, 166, 92, 0) 100%);
   position: absolute;
   z-index: 1;
 }
-
-  // background: radial-gradient(50% 50% at 50% 50%, rgb(242.25, 167.52, 79.74) 0%, rgba(228.44, 165.78, 92.33, 0) 100%);
-
-
-// .How-We-Work h2 {
-//   font-family: $logo-font ;
-// }
-
-
-// .right-land{
-//   background: url('./assets/landing.png');
-
-// }
-
-
-// .How-We-Work .picture {
-//   left: calc(20px + 28vw);
-// }
-
-// .How-We-Work .img {
-//   width: calc(50px + 25vw);
-// }

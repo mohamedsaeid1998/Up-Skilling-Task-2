@@ -48,7 +48,7 @@ const Contact = () => {
             <input {...register("name")} required type="text" className='px-5 py-4 input-style' placeholder='Full Name' />
             <input {...register("email")} required type="email" className=' px-5 py-4 input-style ' placeholder='Email' />
             <input {...register("phone")} required type="tel" className='px-5 py-4 input-style ' placeholder='Phone Number' />
-            <Button linkstyle={''} type={'submit'} text={'send'} className={` m-auto rounded-[61px] border-4 text-black border-[#C98A40] bg-white xl:mb-0 `} />
+            <Button linkstyle={'m-auto'} type={'submit'} text={'send'} className={` m-auto rounded-[61px] border-4 text-black border-[#C98A40] bg-white xl:mb-0 `} />
           </form>
 
           <ul className='flex flex-col gap-4 mt-3 lg:mt-0 lg:gap-9 '>
